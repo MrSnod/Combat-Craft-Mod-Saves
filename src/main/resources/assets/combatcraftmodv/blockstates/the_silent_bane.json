@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "combatcraftmodv:block/the_silent_bane",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "combatcraftmodv:block/the_silent_bane"
+    },
+    "axis=z": {
+      "model": "combatcraftmodv:block/the_silent_bane",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "combatcraftmodv:blocks/moldpurple",
+    "up": "combatcraftmodv:blocks/moldpurple",
+    "north": "combatcraftmodv:blocks/moldpurple",
+    "east": "combatcraftmodv:blocks/moldpurple",
+    "south": "combatcraftmodv:blocks/moldpurple",
+    "west": "combatcraftmodv:blocks/moldpurple",
+    "particle": "combatcraftmodv:blocks/moldpurple"
+  }
+}

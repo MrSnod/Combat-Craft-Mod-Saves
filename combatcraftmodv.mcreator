@@ -1,0 +1,314 @@
+{
+  "mod_elements": [
+    {
+      "name": "FireSpell",
+      "type": "rangeditem",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_spell"
+    },
+    {
+      "name": "StrengthSpellFoodEaten",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_spell_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlightEffectEffectExpires",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight_effect_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlightEffectEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight_effect_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlightEffect",
+      "type": "potioneffect",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight_effect"
+    },
+    {
+      "name": "FlightSpellFoodEaten",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight_spell_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TeleportSpellFoodEaten",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_spell_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "XraySpellFoodEaten",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xray_spell_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheSilentBane",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_silent_bane"
+    },
+    {
+      "name": "AlternateStone",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alternate_stone"
+    },
+    {
+      "name": "AlternateForest",
+      "type": "biome",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alternate_forest"
+    },
+    {
+      "name": "SpellBookFoodEaten",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spell_book_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soldier",
+      "type": "livingentity",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldier"
+    },
+    {
+      "name": "PandorasKnifeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pandoras_knife_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PandorasKnife",
+      "type": "tool",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pandoras_knife"
+    },
+    {
+      "name": "HealerEntityDies",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healer_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Healer",
+      "type": "livingentity",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healer"
+    },
+    {
+      "name": "FireSpellProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_spell_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrengthSpell",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_spell"
+    },
+    {
+      "name": "FlightSpell",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight_spell"
+    },
+    {
+      "name": "TeleportSpell",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_spell"
+    },
+    {
+      "name": "XraySpell",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xray_spell"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.combatcraftmodv.healer_spawn_egg": "Healer Spawn Egg",
+      "biome.combatcraftmodv.alternate_forest": "Alternate Forest",
+      "block.combatcraftmodv.the_silent_bane": "The Silent Bane",
+      "item.combatcraftmodv.fire_spell": "Spell Of Flames",
+      "entity.combatcraftmodv.soldier": "Melee Soldier",
+      "item.combatcraftmodv.pandoras_knife": "Pandora\u0027s Knife",
+      "item.combatcraftmodv.teleport_spell": "Spell of Teleportation",
+      "effect.combatcraftmodv.flight_effect": "FlightEffect",
+      "item.combatcraftmodv.flight_spell": "Spell of Flight",
+      "item.combatcraftmodv.soldier_spawn_egg": "Melee Soldier Spawn Egg",
+      "item.combatcraftmodv.xray_spell": "Spell Of X-Ray",
+      "entity.combatcraftmodv.healer": "Healer",
+      "item.combatcraftmodv.strength_spell": "Spell of Strength",
+      "block.combatcraftmodv.alternate_stone": "Alternate Stone"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "combatcraftmodv",
+    "modName": "CombatCraftmodV2",
+    "version": "1.0.0",
+    "author": "luc, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.combatcraftmodv",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}
