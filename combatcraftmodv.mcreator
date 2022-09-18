@@ -267,6 +267,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "xray_spell"
+    },
+    {
+      "name": "NecronSword",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necron_sword"
     }
   ],
   "variable_elements": [],
@@ -282,6 +290,7 @@
       "item.combatcraftmodv.teleport_spell": "Spell of Teleportation",
       "effect.combatcraftmodv.flight_effect": "FlightEffect",
       "item.combatcraftmodv.flight_spell": "Spell of Flight",
+      "item.combatcraftmodv.necron_sword": "Necron Sword",
       "item.combatcraftmodv.soldier_spawn_egg": "Melee Soldier Spawn Egg",
       "item.combatcraftmodv.xray_spell": "Spell Of X-Ray",
       "entity.combatcraftmodv.healer": "Healer",
