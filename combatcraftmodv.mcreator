@@ -283,6 +283,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "necron_sword"
+    },
+    {
+      "name": "NecronSwordToolInHandTick",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necron_sword_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

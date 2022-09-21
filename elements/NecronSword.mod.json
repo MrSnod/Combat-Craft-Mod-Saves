@@ -24,6 +24,9 @@
     "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "NecronSwordToolInHandTick"
+    }
   }
 }
