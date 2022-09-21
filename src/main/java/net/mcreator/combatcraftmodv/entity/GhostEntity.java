@@ -14,7 +14,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -38,6 +37,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.particles.ParticleTypes;
@@ -86,7 +86,7 @@ public class GhostEntity extends PathfinderMob {
 			}
 		});
 		this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 0.5));
-		this.goalSelector.addGoal(4, new AvoidEntityGoal<>(this, Player.class, (float) 6, 1, 1.2));
+		this.goalSelector.addGoal(4, new AvoidEntityGoal<>(this, ServerPlayer.class, (float) 6, 1, 1.2));
 		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
@@ -98,7 +98,7 @@ public class GhostEntity extends PathfinderMob {
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
-		this.goalSelector.addGoal(7, new LookAtPlayerGoal(this, Player.class, (float) 6));
+		this.goalSelector.addGoal(7, new LookAtPlayerGoal(this, ServerPlayer.class, (float) 7));
 		this.targetSelector.addGoal(8, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(10, new FloatGoal(this));
@@ -169,7 +169,7 @@ public class GhostEntity extends PathfinderMob {
 			double dx = (random.nextFloat() - 0.5D) * 0.5D;
 			double dy = (random.nextFloat() - 0.5D) * 0.5D;
 			double dz = (random.nextFloat() - 0.5D) * 0.5D;
-			world.addParticle(ParticleTypes.EXPLOSION, x0, y0, z0, dx, dy, dz);
+			world.addParticle(ParticleTypes.PORTAL, x0, y0, z0, dx, dy, dz);
 		}
 	}
 
