@@ -367,6 +367,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "valenos_staff"
+    },
+    {
+      "name": "GhostMatter",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_matter"
     }
   ],
   "variable_elements": [],
@@ -387,6 +395,7 @@
       "subtitles.ghost_theme": "Theme for Ghosts",
       "entity.combatcraftmodv.ghost": "Ghost",
       "block.combatcraftmodv.the_silent_bane": "The Silent Bane",
+      "item.combatcraftmodv.ghost_matter": "Ghost Matter",
       "item.combatcraftmodv.fire_spell": "Spell Of Flames",
       "entity.combatcraftmodv.soldier": "Melee Soldier",
       "item.combatcraftmodv.pandoras_knife": "Pandora\u0027s Knife",

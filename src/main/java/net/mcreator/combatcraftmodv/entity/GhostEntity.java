@@ -13,6 +13,7 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -27,7 +28,6 @@ import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
@@ -43,13 +43,14 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.combatcraftmodv.init.CombatcraftmodvModItems;
 import net.mcreator.combatcraftmodv.init.CombatcraftmodvModEntities;
 
 import java.util.Set;
 import java.util.Random;
 
 @Mod.EventBusSubscriber
-public class GhostEntity extends PathfinderMob {
+public class GhostEntity extends Monster {
 	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("old_growth_birch_forest"), new ResourceLocation("forest"),
 			new ResourceLocation("dark_forest"), new ResourceLocation("combatcraftmodv:alternate_forest"), new ResourceLocation("birch_forest"),
 			new ResourceLocation("flower_forest"), new ResourceLocation("windswept_forest"));
@@ -107,6 +108,11 @@ public class GhostEntity extends PathfinderMob {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEAD;
+	}
+
+	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(CombatcraftmodvModItems.GHOST_MATTER.get()));
 	}
 
 	@Override
