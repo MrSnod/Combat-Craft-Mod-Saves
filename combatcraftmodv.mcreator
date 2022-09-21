@@ -269,20 +269,20 @@
       "registry_name": "xray_spell"
     },
     {
-      "name": "NecronSword",
-      "type": "item",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "necron_sword"
-    },
-    {
       "name": "Ghost",
       "type": "livingentity",
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ghost"
+    },
+    {
+      "name": "NecronSword",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necron_sword"
     }
   ],
   "variable_elements": [],

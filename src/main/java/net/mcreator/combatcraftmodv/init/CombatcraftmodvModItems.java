@@ -37,9 +37,9 @@ public class CombatcraftmodvModItems {
 	public static final RegistryObject<Item> FLIGHT_SPELL = REGISTRY.register("flight_spell", () -> new FlightSpellItem());
 	public static final RegistryObject<Item> TELEPORT_SPELL = REGISTRY.register("teleport_spell", () -> new TeleportSpellItem());
 	public static final RegistryObject<Item> XRAY_SPELL = REGISTRY.register("xray_spell", () -> new XraySpellItem());
-	public static final RegistryObject<Item> NECRON_SWORD = REGISTRY.register("necron_sword", () -> new NecronSwordItem());
 	public static final RegistryObject<Item> GHOST = REGISTRY.register("ghost_spawn_egg",
 			() -> new ForgeSpawnEggItem(CombatcraftmodvModEntities.GHOST, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NECRON_SWORD = REGISTRY.register("necron_sword", () -> new NecronSwordItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
