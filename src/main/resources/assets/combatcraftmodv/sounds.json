@@ -1,0 +1,12 @@
+{
+  "ghost_theme": {
+    "category": "neutral",
+    "subtitle": "subtitles.ghost_theme",
+    "sounds": [
+      {
+        "name": "combatcraftmodv:voice-2022-09-21-10-14",
+        "stream": false
+      }
+    ]
+  }
+}

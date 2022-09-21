@@ -1,10 +1,13 @@
 {
   "item.combatcraftmodv.healer_spawn_egg": "Healer Spawn Egg",
   "biome.combatcraftmodv.alternate_forest": "Alternate Forest",
+  "subtitles.ghost_theme": "Theme for Ghosts",
+  "entity.combatcraftmodv.ghost": "Ghost",
   "block.combatcraftmodv.the_silent_bane": "The Silent Bane",
   "item.combatcraftmodv.fire_spell": "Spell Of Flames",
   "entity.combatcraftmodv.soldier": "Melee Soldier",
   "item.combatcraftmodv.pandoras_knife": "Pandora\u0027s Knife",
+  "item.combatcraftmodv.ghost_spawn_egg": "Ghost Spawn Egg",
   "item.combatcraftmodv.teleport_spell": "Spell of Teleportation",
   "effect.combatcraftmodv.flight_effect": "FlightEffect",
   "item.combatcraftmodv.flight_spell": "Spell of Flight",

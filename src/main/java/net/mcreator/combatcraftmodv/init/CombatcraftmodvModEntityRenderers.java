@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.combatcraftmodv.client.renderer.SoldierRenderer;
 import net.mcreator.combatcraftmodv.client.renderer.HealerRenderer;
+import net.mcreator.combatcraftmodv.client.renderer.GhostRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CombatcraftmodvModEntityRenderers {
@@ -21,5 +22,6 @@ public class CombatcraftmodvModEntityRenderers {
 		event.registerEntityRenderer(CombatcraftmodvModEntities.FIRE_SPELL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CombatcraftmodvModEntities.SOLDIER.get(), SoldierRenderer::new);
 		event.registerEntityRenderer(CombatcraftmodvModEntities.HEALER.get(), HealerRenderer::new);
+		event.registerEntityRenderer(CombatcraftmodvModEntities.GHOST.get(), GhostRenderer::new);
 	}
 }

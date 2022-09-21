@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.combatcraftmodv.entity.SoldierEntity;
 import net.mcreator.combatcraftmodv.entity.HealerEntity;
+import net.mcreator.combatcraftmodv.entity.GhostEntity;
 import net.mcreator.combatcraftmodv.entity.FireSpellEntity;
 import net.mcreator.combatcraftmodv.CombatcraftmodvMod;
 
@@ -37,6 +38,9 @@ public class CombatcraftmodvModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(HealerEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GhostEntity>> GHOST = register("ghost",
+			EntityType.Builder.<GhostEntity>of(GhostEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(GhostEntity::new).fireImmune().sized(0.9f, 1.4f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -47,6 +51,7 @@ public class CombatcraftmodvModEntities {
 		event.enqueueWork(() -> {
 			SoldierEntity.init();
 			HealerEntity.init();
+			GhostEntity.init();
 		});
 	}
 
@@ -54,5 +59,6 @@ public class CombatcraftmodvModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(SOLDIER.get(), SoldierEntity.createAttributes().build());
 		event.put(HEALER.get(), HealerEntity.createAttributes().build());
+		event.put(GHOST.get(), GhostEntity.createAttributes().build());
 	}
 }
