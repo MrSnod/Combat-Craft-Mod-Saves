@@ -1,0 +1,35 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "valenos_staff",
+    "customModelName": "Normal",
+    "name": "Valeno's Staff",
+    "specialInfo": [
+      "made by Valeno himself"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 0.0,
+    "attackSpeed": 1.0,
+    "enchantability": 0,
+    "damageVsEntity": 4.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "ValenosStaffRightclickedOnBlock"
+    },
+    "onEntityHitWith": {
+      "name": "ValenosStaffLivingEntityIsHitWithTool"
+    }
+  }
+}

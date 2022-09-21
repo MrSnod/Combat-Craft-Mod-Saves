@@ -299,6 +299,74 @@
           }
         ]
       }
+    },
+    {
+      "name": "ValenosStaffRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valenos_staff_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValenosStaffLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valenos_staff_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ValenosStaff",
+      "type": "tool",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "valenos_staff"
     }
   ],
   "variable_elements": [],
@@ -331,7 +399,8 @@
       "item.combatcraftmodv.xray_spell": "Spell Of X-Ray",
       "entity.combatcraftmodv.healer": "Healer",
       "item.combatcraftmodv.strength_spell": "Spell of Strength",
-      "block.combatcraftmodv.alternate_stone": "Alternate Stone"
+      "block.combatcraftmodv.alternate_stone": "Alternate Stone",
+      "item.combatcraftmodv.valenos_staff": "Valeno\u0027s Staff"
     }
   },
   "foldersRoot": {

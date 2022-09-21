@@ -15,6 +15,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.combatcraftmodv.item.XraySpellItem;
+import net.mcreator.combatcraftmodv.item.ValenosStaffItem;
 import net.mcreator.combatcraftmodv.item.TeleportSpellItem;
 import net.mcreator.combatcraftmodv.item.StrengthSpellItem;
 import net.mcreator.combatcraftmodv.item.PandorasKnifeItem;
@@ -40,6 +41,7 @@ public class CombatcraftmodvModItems {
 	public static final RegistryObject<Item> GHOST = REGISTRY.register("ghost_spawn_egg",
 			() -> new ForgeSpawnEggItem(CombatcraftmodvModEntities.GHOST, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> NECRON_SWORD = REGISTRY.register("necron_sword", () -> new NecronSwordItem());
+	public static final RegistryObject<Item> VALENOS_STAFF = REGISTRY.register("valenos_staff", () -> new ValenosStaffItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
